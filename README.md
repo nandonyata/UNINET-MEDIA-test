@@ -11,6 +11,8 @@ List of Available Endpoints:
 
 - `POST /user/register`
 - `POST /user/login`
+- `POST /user/clock-in`
+- `POST /user/clock-out/:id`
 
 ### POST /user/register
 
