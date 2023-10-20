@@ -1,22 +1,22 @@
-const { model } = require('../configs/mongoDb');
+const { model, Schema } = require('../configs/mongoDb');
 
-const userSchema = model('user', {
-  name: {
-    type: String,
-    required: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  location: {
-    longitude: Number,
-    latitude: Number,
-  },
-  ipAddress: {
-    type: String,
-    required: true,
-  },
-});
+const User = model(
+  'user',
+  new Schema({
+    name: {
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+  })
+);
 
-module.exports = userSchema;
+module.exports = User;
