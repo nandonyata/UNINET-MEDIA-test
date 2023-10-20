@@ -46,7 +46,7 @@ module.exports = class UserController {
         last: new Date().setHours(23, 59, 59, 99),
       };
 
-      const findAttendanceToday = await Attendance.findOne({ user_id: req.user._id, createdAt: { $gte: date.first, $lte: date.last }, remark: 'Clock in', ipAddress });
+      const findAttendanceToday = await Attendance.findOne({ user_id: req.user._id, createdAt: { $gte: date.first, $lte: date.last }, remark: 'Clock in' });
       if (findAttendanceToday) throw { message: 'User hasnt clock out last attendance' };
 
       const attendance = await Attendance.create({ user_id: req.user._id, location: { longitude, latitude }, ipAddress });
