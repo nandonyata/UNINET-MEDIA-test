@@ -145,10 +145,10 @@ _201 - Created_
   "attendance": {
     "user_id": "65324b3383cc815ee0a9ede8",
     "location": {
-      "longitude": 1112313,
-      "latitude": 12313
+      "longitude": "-1111",
+      "latitude": "-122131"
     },
-    "ipAddress": "nando@mail.com",
+    "ipAddress": "192.21093u.1101.1",
     "remark": "Clock in",
     "_id": "653251cccfa9401b99c06dd3",
     "createdAt": "2023-10-20T10:09:16.224Z",
@@ -216,7 +216,7 @@ _200 - Patched_
     },
     "_id": "653255664a575bd61cf6af5d",
     "user_id": "65324b3383cc815ee0a9ede8",
-    "ipAddress": "aaa@mail.com",
+    "ipAddress": "1w313",
     "remark": "Clock out",
     "createdAt": "2023-10-20T10:24:38.390Z",
     "updatedAt": "2023-10-20T10:24:38.390Z",
